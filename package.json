@@ -1,0 +1,39 @@
+{
+  "name": "collaborative-whiteboard",
+  "version": "1.0.0",
+  "description": "A real-time collaborative whiteboard application built with React.js, Node.js/Express, and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend/whiteboard-frontend && pnpm run dev --host",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend/whiteboard-frontend && pnpm run build",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend/whiteboard-frontend && pnpm install",
+    "install:all": "npm run install:backend && npm run install:frontend"
+  },
+  "keywords": [
+    "whiteboard",
+    "collaboration",
+    "real-time",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "socket.io",
+    "drawing",
+    "canvas"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/collaborative-whiteboard.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+
