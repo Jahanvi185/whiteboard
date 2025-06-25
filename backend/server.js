@@ -21,7 +21,11 @@ app.use(express.json());
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/whiteboard";
 let db;
 
-MongoClient.connect(MONGODB_URI)
+MongoClient.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  tls: true
+})
   .then((client) => {
     console.log("Connected to MongoDB");
     db = client.db("whiteboard");
