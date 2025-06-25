@@ -10,7 +10,7 @@ import { v4 as uuidv4 } from 'uuid'
 import './App.css'
 
 function App() {
-  const [currentView, setCurrentView] = useState('home') // 'home', 'whiteboard'
+  const [currentView, setCurrentView] = useState('home')
   const [socket, setSocket] = useState(null)
   const [roomId, setRoomId] = useState('')
   const [userName, setUserName] = useState('')
