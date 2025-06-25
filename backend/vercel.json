@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "/server.js",
+            "use": "@ncrcsl/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/c:",
+            "dest": "/server.js"
+        }
+    ]
+}
